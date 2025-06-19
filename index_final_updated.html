@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Former Lab Members</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 790px;
+  margin: 0 auto 60px;
+}
+
+
+    .card {
+      position: relative;
+      width: 230px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card img {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #222;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .bio-overlay {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      max-width: 800px;
+      transform: translate(-50%, -50%);
+      background: white;
+      color: black;
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+      z-index: 1000;
+    }
+
+    .card:hover .bio-overlay {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .bio-photo {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .bio-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .bio-text h3 {
+      font-size: 22px;
+      margin: 0 0 4px;
+      color: #111;
+    }
+
+    .bio-text p {
+      margin: 2px 0;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .bio-description {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<h1 style="text-align: center;">Our Team</h1>
+<div class="grid">
+
+
+<div class="grid">
+
+  <div class="card">
+    <div style="width: 230px; height: 230px; border-radius: 50%; overflow: hidden;">
+      <img src="john-chen.jpg" alt="John Chen" style="transform: scale(1); transform-origin: center center; object-fit: cover;" />
+    </div>
+    <h3>John Chen</h3>
+    <p>PhD Student</p>
+    <div class="bio-overlay">
+      <div style="width: 230px; height: 230px; border-radius: 50%; overflow: hidden;">
+        <img src="john-chen.jpg" alt="John Chen" class="bio-photo" style="transform: scale(1); transform-origin: center center; object-fit: cover;" />
+      </div>
+      <div class="bio-text">
+        <h3>John Chen</h3>
+        <p>PhD Student</p>
+        <div class="bio-description">John is a first-year PhD student in Materials Science and Engineering. He earned his B.S. in the same field with a minor in Bioengineering from the University of Illinois at Urbana-Champaign. His research focuses on hydrogel mechanics and the mechanical regulation of immune cells.</div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="card">
+    <div style="width: 230px; height: 230px; border-radius: 50%; overflow: hidden;">
+      <img src="jedtanut-thussananutiyakul.jpg" alt="Jedtanut Thussananutiyakul" style="transform: scale(1); transform-origin: center center; object-fit: cover;" />
+    </div>
+    <h3>Jedtanut Thussananutiyakul</h3>
+    <p>DScD Student, Ortho Resident</p>
+    <div class="bio-overlay">
+      <div style="width: 230px; height: 230px; border-radius: 50%; overflow: hidden;">
+        <img src="jedtanut-thussananutiyakul.jpg" alt="Jedtanut Thussananutiyakul" class="bio-photo" style="transform: scale(1); transform-origin: center center; object-fit: cover;" />
+      </div>
+      <div class="bio-text">
+        <h3>Jedtanut Thussananutiyakul</h3>
+        <p>DScD Student, Ortho Resident</p>
+        <div class="bio-description">Jedtanut is a first-year Doctor of Science in Dentistry (DScD) student and Orthodontics resident at Penn Dental. He graduated from Chulalongkorn University in Bangkok, Thailand. His research aims to uncover new insights into oral biology and advance related treatments.</div>
+      </div>
+    </div>
+  </div>
+    
+</div><div class="grid">
+
+  <div class="card">
+    <div style="width: 230px; height: 230px; border-radius: 50%; overflow: hidden;">
+      <img src="hardik-makkar.jpg" alt="Dr. Hardik Makkar" style="transform: scale(1); transform-origin: center center; object-fit: cover;" />
+    </div>
+    <h3>Dr. Hardik Makkar</h3>
+    <p>Postdoctoral Fellow</p>
+    <div class="bio-overlay">
+      <div style="width: 230px; height: 230px; border-radius: 50%; overflow: hidden;">
+        <img src="hardik-makkar.jpg" alt="Dr. Hardik Makkar" class="bio-photo" style="transform: scale(1); transform-origin: center center; object-fit: cover;" />
+      </div>
+      <div class="bio-text">
+        <h3>Dr. Hardik Makkar</h3>
+        <p>Postdoctoral Fellow</p>
+        <div class="bio-description">Dr. Hardik is an Endodontist and holds a Ph.D. from the National University of Singapore with research focused on Alternatives to Animal research, Craniofacial Tissue Engineering, and Microfluidic organ-on-chip systems. He now investigates mechanobiology of fibrotic niches and mechanical regulation of inflammation in cancer and regeneration. He enjoys swimming, music, poetry, and good brews.</div>
+      </div>
+    </div>
+  </div>
+    </div>
+<hr style="border: none; border-top: 3px solid black; margin: 60px 0;">
+<h1 style="text-align: center;">Former Lab Members</h1>
+<div class="grid">
+
+  <div class="card">
+    <img src="yan-luo.jpg" alt="Yan Luo" />
+    <h3>Yan Luo</h3>
+    <p>PhD Student</p>
+    <div class="bio-overlay">
+      <img src="yan-luo.jpg" alt="Yan Luo" class="bio-photo" />
+      <div class="bio-text">
+        <h3>Yan Luo</h3>
+        <p>PhD Student</p>
+        <div class="bio-description">Yan is a fourth-year PhD student majoring in Mechanical Engineering and Applied Mechanics. She also obtained a master's degree in Mechatronic and Robotic Systems at Penn. Her research focuses on strain-responsive biopolymers and their applications in soft robotics.</div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="card">
+    <img src="zain-siddiqui.jpg" alt="Zain Siddiqui" />
+    <h3>Zain Siddiqui</h3>
+    <p>Postdoctoral Fellow</p>
+    <div class="bio-overlay">
+      <img src="zain-siddiqui.jpg" alt="Zain Siddiqui" class="bio-photo" />
+      <div class="bio-text">
+        <h3>Zain Siddiqui</h3>
+        <p>Postdoctoral Fellow</p>
+        <div class="bio-description">Zain is a NIDCR T90 postdoctoral fellow researching hybrid biomaterial strategies for dental pulp regeneration. He focuses on combining mRNA-loaded lipid nanoparticles with hydrogels for bio-integration and soft tissue regeneration.</div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="card">
+    <img src="zecheng-li.jpg" alt="Zecheng Li" />
+    <h3>Zecheng Li</h3>
+    <p>Master’s Student</p>
+    <div class="bio-overlay">
+      <img src="zecheng-li.jpg" alt="Zecheng Li" class="bio-photo" />
+      <div class="bio-text">
+        <h3>Zecheng Li</h3>
+        <p>Master’s Student</p>
+        <div class="bio-description">Zecheng is a first-year master's student researching collagen self-assembly and hydrogel poroelasticity. He earned his B.S. in Bioengineering from UC San Diego and enjoys photography, bouldering, and swimming.</div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="card">
+    <img src="changyue-xue.jpg" alt="Changyue Xue" />
+    <h3>Changyue Xue</h3>
+    <p>Visiting Scholar</p>
+    <div class="bio-overlay">
+      <img src="changyue-xue.jpg" alt="Changyue Xue" class="bio-photo" />
+      <div class="bio-text">
+        <h3>Changyue Xue</h3>
+        <p>Visiting Scholar</p>
+        <div class="bio-description">Dr. Xue is a dental implant surgeon from Nanjing Medical University. His research investigates mechanical microenvironments in tissue engineering and oral diseases. He enjoys volleyball, movies, traveling, and new foods.</div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="card">
+    <img src="keyu-chen.jpg" alt="Keyu Chen" />
+    <h3>Keyu Chen</h3>
+    <p>Master’s Student</p>
+    <div class="bio-overlay">
+      <img src="keyu-chen.jpg" alt="Keyu Chen" class="bio-photo" />
+      <div class="bio-text">
+        <h3>Keyu Chen</h3>
+        <p>Master’s Student</p>
+        <div class="bio-description">Keyu is a first-year master's student researching hydrogel composites for drug delivery in dentistry. She earned her bachelor's degree from Beijing University of Technology.</div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="card">
+    <img src="tracy-jiang.jpg" alt="Tracy Jiang" />
+    <h3>Tracy Jiang</h3>
+    <p>Master’s Student</p>
+    <div class="bio-overlay">
+      <img src="tracy-jiang.jpg" alt="Tracy Jiang" class="bio-photo" />
+      <div class="bio-text">
+        <h3>Tracy Jiang</h3>
+        <p>Master’s Student</p>
+        <div class="bio-description">Yuchen is a first-year master's student who earned her degree from the University of Toronto with a minor in bioengineering. She now investigates altered enamel composition for predicting neurodegenerative phenotypes.</div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="card">
+    <img src="xiao-he.jpg" alt="Xiao He" />
+    <h3>Xiao He</h3>
+    <p>Master’s Student</p>
+    <div class="bio-overlay">
+      <img src="xiao-he.jpg" alt="Xiao He" class="bio-photo" />
+      <div class="bio-text">
+        <h3>Xiao He</h3>
+        <p>Master’s Student</p>
+        <div class="bio-description">Xiao is a first-year student at Penn with a B.S. from University College London. Her research applies mechanical engineering principles to biology and materials. She enjoys cooking and horror films.</div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="card">
+    <img src="mia-ruiz.jpg" alt="Mia Ruiz" />
+    <h3>Mia Ruiz</h3>
+    <p>Research Specialist</p>
+    <div class="bio-overlay">
+      <img src="mia-ruiz.jpg" alt="Mia Ruiz" class="bio-photo" />
+      <div class="bio-text">
+        <h3>Mia Ruiz</h3>
+        <p>Research Specialist</p>
+        <div class="bio-description">Mia managed the Vining Lab for two years, supporting operations and personnel. She played a key role in adapting workflows to promote wellbeing and efficiency. Mia is known for her attention to detail, warmth, and leadership development.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
